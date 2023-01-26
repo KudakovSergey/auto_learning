@@ -54,3 +54,7 @@ class TestElements:
                 web_table_page.search_some_person(key_word)
                 table_result = web_table_page.check_search_person()
                 assert key_word in table_result, "the person was not find"
+
+            def test_web_table_update_person_info(self, driver):
+                web_table_page = WebTablePage(driver, 'https://demoqa.com/webtables')
+                web_table_page.open()
