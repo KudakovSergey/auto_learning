@@ -12,6 +12,7 @@ class BasePage:
         self.driver.get(self.url)
 
     def element_is_visible(self, locator, timeout=5):
+        self.go_to_element(self.element_is_present(locator))
         return Wait(self.driver, timeout).until(ec.visibility_of_element_located(locator))
 
     def element_are_visible(self, locator, timeout=5):
