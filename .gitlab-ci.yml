@@ -81,3 +81,4 @@ pages: # Названием этой job говорим гитлабу, чтоб
       - public
   rules:
     - when: always
+
