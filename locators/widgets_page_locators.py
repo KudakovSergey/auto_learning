@@ -57,7 +57,7 @@ class ToolTipsPageLocators:
     BUTTON = (By.CSS_SELECTOR, 'button[id="toolTipButton"]')
     TOOL_TIP_BUTTON = (By.CSS_SELECTOR, 'button[aria-describedby="buttonToolTip"]')
 
-    FIELD = (By.CSS_SELECTOR, 'div[id="texFieldToolTopContainer"] input[id="toolTipTextField"]')
+    FIELD = (By.CSS_SELECTOR, 'input[id="toolTipTextField"]')
     TOOL_TIP_FIELD = (By.CSS_SELECTOR, 'input[aria-describedby="textFieldToolTip"]')
 
     CONTRARY_LINK = (By.XPATH, '//*[.="Contrary"]')
